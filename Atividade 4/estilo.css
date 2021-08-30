@@ -1,0 +1,113 @@
+/*Reset*/
+
+* { margin: 0;
+    padding: 0;
+    
+    font-family: 'Sawarabi Gothic', sans-serif; ;
+    
+}
+
+@charset "UTF-8"
+
+img {max-width: 100%;}
+ul {list-style: none;}
+a { text-decoration: none;}
+
+/*Cabeçalho da pagina*/
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding:5px 3%;
+    background-color: #ff66c4;
+}
+.logo a {
+    width: 180px;
+    height: 128px;
+    float: left;
+    background: url(imagens/HILogo1.png) no-repeat; font-size: 0;
+    
+}
+
+body{
+    background-image: url(imagens/bg5.jpeg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+main{
+    background-color: #d1b9eb ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #b5a0ca9f  ;
+    width: 600px;
+    padding : 20px;
+    margin: auto;
+    margin-bottom:30px ;
+    min-width: 100px;
+    max-width: 800px;
+}
+
+main img {
+    min-width: 100px;
+}
+
+h1 {
+    color:#405fe7;
+    text-align: center;
+    text-shadow: 1px 1px 2px #3148ac ;
+}
+h2{
+     color: #7a81ce;
+    text-align: center;
+    text-shadow: 1px 1px 2px #24284dab;
+
+}
+main p {
+    text-align: justify;
+    color: #333333;
+    margin: 15px 0px;
+}
+
+
+
+
+nav{
+    background-color: #ff66c4;
+    padding: 10px 3%;
+    width: 100%;
+    
+}
+nav a {
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: #f5b554;
+}
+aside {
+    background-color: rgb(173, 166, 226);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside h3 {
+    color: #d1cf37;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(78, 77, 14, 0.342);
+}
+
+aside p {
+    text-align: center;
+    color: #333333;
+}
+
+aside ul {
+    text-align: center;
+}
+footer{
+    background-color: #ff66c4;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
