@@ -1,0 +1,1 @@
+O tema a ser usado no portifólio correspondem a saga de filmes/livros Harry Potter, assim como sua paleta de cores. As cores escolhidas em questão representam as cores da casa conhecida na história como Grifinória.
