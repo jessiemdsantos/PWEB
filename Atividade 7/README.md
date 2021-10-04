@@ -28,4 +28,4 @@ DisponibilizarnoGitHubseuusuario\PWEB\Atividade7
 
 ## Resultado
 
-Confira o resuldado dessa atividade em: https://jo-ken-po.netlify.app/
+### Confira o resuldado dessa atividade em: [Atividade 7](https://jo-ken-po.netlify.app/)
