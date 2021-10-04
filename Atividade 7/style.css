@@ -1,0 +1,102 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #edf6f9;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    
+}
+
+#titulo{
+    text-align: center;
+    padding: 20px;
+    color: #006d77;
+}
+#placar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#jogador, #computador{
+    position: relative;
+    flex-grow: 1;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    color: #006d77;
+    background-color: #ffddd2;
+}
+
+
+
+#versus{
+    font-size: 40px;
+    width: 70px;
+    text-align: center;
+    color: #006d77;
+}
+#jogador-nome, #computador-nome{
+    margin: 0;
+    padding: 0;
+    font-size:32px;
+   position: relative;
+}
+#jogador-nome{
+    text-align: left;
+}
+#computador-nome{
+    text-align: right;
+}
+#jogador-pontos, #computador-pontos{
+    position: absolute;
+    top: 18px;
+    font-size: 32px;
+}
+#jogador-pontos{
+    right: 20px;
+}
+ul#jogador-escolha,ul#computador-escolha{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+ul#jogador-escolha li,ul#computador-escolha li{
+    display: inline;
+}
+ul#jogador-escolha li a,ul#computador-escolha li a{
+    opacity: .4;
+}
+ul#jogador-escolha li a:hover, ul#jogador-escolha li a.selecionado ,ul#computador-escolha li a.selecionado {
+    opacity: .99;
+}
+ul#jogador-escolha li a img,ul#computador-escolha li a img{
+    max-width: 100px;
+    padding: 10px;
+    margin: 8px;
+
+}
+#mensagens {
+    background-color: #83c5be;
+    border-radius: 5px;
+    margin: 40px 0;
+    padding: 10px;
+    font-size: 32px;
+    text-align: center;
+    color: #af725c;
+}
+.rodape{
+   
+    color: #e29578;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    padding: 40px;
+
+   }
