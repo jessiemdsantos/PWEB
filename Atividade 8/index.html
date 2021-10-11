@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  
+</head>
+<body>
+    
+    <div class="box">
+        <form nome="forumlario" action="" ></form>
+            <fieldset>
+                <legend><strong>Questionário</strong></legend>
+                <div class="inputBox">
+                    <input type="number" name="idade" id="idade" class="inputUser" required>
+                    <label for="idade" class="labelInput">Idade</label>
+                </div><br>
+             
+                <p>Sexo:</p>             
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                
+                <p>Como você avaliaria o filme?</p>
+               
+                    
+                <input type="radio" name="opiniao" id="otimo" value = "otimo" required>
+                <label for="otimo">Ótimo</label> <br>
+                <input type="radio" name="opiniao" id="bom" value = "bom" required>
+                <label for="bom">Bom</label><br>
+                <input type="radio" name="opiniao" id="regular" value = "regular" required>
+                <label for="regular">Regular</label><br>
+                <input type="radio" name="opiniao" id="pessimo" value = "pessimo" required>
+                <label for="pessimo">Péssimo</label><br><br><br>
+                <button onclick="addOp()">Adicionar opinião</button><br><br>
+                <button onclick="resultado()">Exibir resultados</button>          
+                </p>
+                <br>
+                <p id="contador">Foram entrevistadas 0/45 pessoas</p>
+                <section>
+                    <div class="result">
+                        <h2 id="h2"></h2>
+                        <p id="p"></p>
+                    </div>
+                </section>
+            </fieldset>
+        </form> 
+    </div>
+    
+</body>
+</html>
