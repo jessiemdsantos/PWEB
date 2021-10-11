@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(66, 102, 136), rgb(57, 22, 121));
+    padding: 28px;
+    display: flex;
+   
+}
+
+fieldset{
+    border: 5px solid rgb(165, 21, 122);
+    padding: 10px ;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(50, 5, 56, 0.6);
+    padding: 100px;
+    border-radius: 15px;
+
+}
+legend{
+    border: 1px solid rgb(83, 7, 7);
+    padding: 13px;
+   
+    text-align: center;
+    color:white;
+    background-color: rgb(155, 15, 62);
+    border-radius: 10px;
+}
+
+p{
+   color:rgb(8, 5, 49);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+ 
+}
+
+
+button{
+    background-image: linear-gradient(to right,rgb(0, 68, 146), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}

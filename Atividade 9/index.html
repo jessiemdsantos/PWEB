@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  
+</head>
+<body>
+    
+    <div class="box">
+            <fieldset>
+                <legend><strong>Atividade 9</strong></legend>
+                  <p>Escolha três números: </p>
+                <div class="firstN">
+                    <label for="number1" >1º Número</label>
+                    <input type="number" name="num" id="numUm"  required>
+                   
+                </div><br>
+                <div class="secondN">
+                    <label for="number2">2º Número</label>
+                    <input type="number" name="num" id="numDois" required>
+                    
+                </div><br>
+                <div class="thirdN">
+                      <label for="number3" >3º Número </label> 
+                      <input type="number" name="num" id="numTres" required>
+                 
+                </div><br>
+             
+                <button onclick="maiorNum()" id="maiorNum">Ver maior número</button><br><br>
+                <button onclick="ordemCres()" id="ordemCres">Ver ordem crescente</button>          
+            
+                <br>
+                
+                <section>
+                    <p id="result"></p>
+                    
+                </section>
+            </fieldset>
+    </div>    
+    
+</body>
+</html>
