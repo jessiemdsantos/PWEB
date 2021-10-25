@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11 - Exercicio 2</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+    <script>
+        function Conta(nomeCorrentista, nomeBanco, numConta, saldo){
+            this.nomeCorrentista = nomeCorrentista;
+            this.nomeBanco = nomeBanco;
+            this.numConta = numConta;
+            this.saldo = saldo;
+
+            this.setnomeCorrentista = function (nome){
+                nomeCorrentista = nome;
+            }
+            this.setnomeBanco = function (banco){
+                nomeBanco = banco;
+            }
+            this.setnumConta = function(conta){
+                numConta = conta;
+            }
+            this.setsaldo = function(vSaldo){
+                saldo = vSaldo;
+            }
+            this.getnomeCorrentista = function(){
+                return nomeCorrentista;
+            }
+            this.getnomeBanco= function(){
+                return nomeBanco;
+            }
+            this.getnumConta = function(){
+                return numConta;
+            }
+            this.getsaldo = function (){
+                return saldo;
+            }
+        }
+        function Corrente (salEspecial){
+            this.salEspecial = salEspecial;
+
+            this.setsalEspecial = function(valSaldoEsp){
+                salEspecial = valSaldoEsp;
+            }
+            this.getsalEspecial = function (){
+                return salEspecial;
+            }
+        }
+        function Poupanca (juros, dataVencimento){
+            this.juros = juros;
+            this.dataVencimento = dataVencimento;
+
+            
+            this.setjuros = function (valJuros){
+                juros = valJuros;
+            }
+            this.setdataVencimento = function (dataVenc){
+                dataVencimento = dataVenc;
+            }
+            this.getjuros = function(){
+                return juros;
+            }
+            this.getdataVencimento = function (){
+                return dataVencimento;
+            }
+        }
+
+                
+        Corrente.prototype = new Conta();
+
+        var contaCorrente = new Corrente();
+
+        contaCorrente.setnomeCorrentista('Wei Wuxian');
+        contaCorrente.setnomeBanco('Yelling');
+        contaCorrente.setnumConta('0001');
+        contaCorrente.setsaldo('500,00');
+        contaCorrente.setsalEspecial('100,00');
+
+
+        Poupanca.prototype = new Conta();
+
+        var contaPoupanca = new Poupanca();
+
+        contaPoupanca.setnomeCorrentista('Lan Wangji');
+        contaPoupanca.setnomeBanco('Gusu');
+        contaPoupanca.setnumConta('0002');
+        contaPoupanca.setsaldo('50.000,00');
+        contaPoupanca.setjuros('10%');
+        contaPoupanca.setdataVencimento("01/01/2022");
+
+
+        window.alert('-------------------- CONTA CORRENTE--------------------\n\nNome: ' + contaCorrente.getnomeCorrentista() + 
+        '\nBanco: ' + contaCorrente.getnomeBanco() + 
+        '\nNúmero da conta: ' + contaCorrente.getnumConta() + 
+        '\nSaldo: R$' +  contaCorrente.getsaldo() +  
+        '\nSaldo especial: R$ ' + contaCorrente.getsalEspecial());
+       
+        
+        window.alert('-------------------- CONTA POUPANÇA --------------------\n\nNome: ' + contaPoupanca.getnomeCorrentista() + '\nBanco: ' + contaPoupanca.getnomeBanco() +
+       '\nNúmero da conta: ' + contaPoupanca.getnumConta() + 
+       '\nSaldo: R$' +  contaPoupanca.getsaldo() + 
+       '\nJuros: '  + contaPoupanca.getjuros() + 
+       '\nData de Vencimento: ' + contaPoupanca.getdataVencimento());
+        
+
+    </script> 
+</body>
+</html>
