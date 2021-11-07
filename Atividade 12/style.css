@@ -1,0 +1,14 @@
+body{
+    background-color: turquoise;
+}
+p{
+    text-align: center;
+    color: rgb(163, 41, 41);
+    font-size: 1.5rem;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
