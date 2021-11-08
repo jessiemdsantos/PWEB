@@ -1,0 +1,35 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#124a83;
+    flex-wrap: wrap;
+
+}
+.formulario{
+    border: 5px solid #188cc2;
+    align-items: center;
+    position: absolute;
+    margin-top: 400px;
+    transform: translate(-50%,-50%);
+    background-color: #1b70c5;
+    padding: 100px;
+    border-radius: 5px;
+
+}
+h1{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+      
+}
+p{
+    font-size: 1.1rem;
+}
+
+.pesquisas p{
+   
+    text-align: center;
+}
